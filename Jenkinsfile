@@ -8,7 +8,7 @@ stage('delet ws')
 	
     
  stage('Git checkout'){
-	git 'https://github.com/joshiPriya/Helloworld.git'
+	git 'https://github.com/joshiPriya/hello-world.git'
 }
 
 stage('compile-package')
