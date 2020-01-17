@@ -32,7 +32,7 @@
 	 <repository>
     <id>releases</id>
     <!-- CHANGE HERE by your team nexus server -->
-    <url>http://10.100.90.206:8081/repository/maven-releases/</url>
+    <url>http://10.100.90.206:8081/repository/maven-releases</url>
   </repository>
 <!--   <snapshotRepository>
     <id>snapshots</id>
