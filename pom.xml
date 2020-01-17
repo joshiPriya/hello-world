@@ -1,4 +1,4 @@
-<!-- <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
@@ -28,42 +28,11 @@
       <url>file:///tmp/maven-project-site</url>
     </site> 
 
-           
-  
-    <repository>
-    <id>releases</id>
-    
-    <url>http://10.100.90.206:8081/repository/maven-releases/</url>
-  </repository>
+        
   </distributionManagement>
 
   <build>
     <plugins>
-             
-     
-	 <plugin>
-               <groupId>org.codehaus.mojo</groupId>
-               <artifactId>build-helper-maven-plugin</artifactId>
-               <version>1.7</version>
-               <executions>
-                   <execution>
-                       <id>attach-artifacts</id>
-                       <phase>package</phase>
-                       <goals>
-                           <goal>attach-artifact</goal>
-                       </goals>
-                       <configuration>
-                           <artifacts>
-                               <artifact>
-                                   <file>metadata.n3</file>
-                                   <type>n3</type>
-                                   <classifier>metadata</classifier>
-                               </artifact>                               
-                           </artifacts>
-                       </configuration>
-                   </execution>
-               </executions>
-           </plugin>
              
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -253,10 +222,10 @@
   </prerequisites>
 
 </project>
- -->
+ 
 
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<!--<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
@@ -324,7 +293,7 @@
     </dependency>
   </dependencies>
 </project>
-
+-->
 
 
 
