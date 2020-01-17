@@ -29,10 +29,11 @@
     </site>
            
            <!-- Added repository distribution -->
-    <snapshotRepository>
-    <id>snapshots</id>
-    <url>http://10.100.90.206:8081/repository/maven-snapshots/</url>
-  </snapshotRepository>
+    <repository>
+    <id>releases</id>
+    <!-- CHANGE HERE by your team nexus server -->
+    <url>http://10.100.90.206:8081/repository/maven-releases/</url>
+  </repository>
   </distributionManagement>
 
   <build>
