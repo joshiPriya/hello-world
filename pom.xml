@@ -40,19 +40,29 @@
     <plugins>
              
       <!-- added mavn deploy plugin-->
-	<plugin>
-   <artifactId>maven-deploy-plugin</artifactId>
-   <version>2.8.1</version>
-   <executions>
-      <execution>
-         <id>default-deploy</id>
-         <phase>deploy</phase>
-         <goals>
-            <goal>deploy</goal>
-         </goals>
-      </execution>
-   </executions>
-</plugin>
+	 <plugin>
+               <groupId>org.codehaus.mojo</groupId>
+               <artifactId>build-helper-maven-plugin</artifactId>
+               <version>1.7</version>
+               <executions>
+                   <execution>
+                       <id>attach-artifacts</id>
+                       <phase>package</phase>
+                       <goals>
+                           <goal>attach-artifact</goal>
+                       </goals>
+                       <configuration>
+                           <artifacts>
+                               <artifact>
+                                   <file>metadata.n3</file>
+                                   <type>n3</type>
+                                   <classifier>metadata</classifier>
+                               </artifact>                               
+                           </artifacts>
+                       </configuration>
+                   </execution>
+               </executions>
+           </plugin>
              
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
