@@ -26,12 +26,13 @@
       <id>site-server</id>
       <name>Test Project Site</name>
       <url>file:///tmp/maven-project-site</url>
-    </site>
+    </site> 
+
            
-           <!-- Added repository distribution -->
+  
     <repository>
     <id>releases</id>
-    <!-- CHANGE HERE by your team nexus server -->
+    
     <url>http://10.100.90.206:8081/repository/maven-releases/</url>
   </repository>
   </distributionManagement>
@@ -39,7 +40,7 @@
   <build>
     <plugins>
              
-      <!-- added mavn deploy plugin-->
+     
 	 <plugin>
                <groupId>org.codehaus.mojo</groupId>
                <artifactId>build-helper-maven-plugin</artifactId>
@@ -251,7 +252,8 @@
     <maven>3.0.3</maven>
   </prerequisites>
 
-</project> -->
+</project>
+ -->
 
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
