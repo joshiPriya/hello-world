@@ -34,11 +34,11 @@
     <!-- CHANGE HERE by your team nexus server -->
     <url>http://10.100.90.206:8081/repository/maven-releases/</url>
   </repository>
-  <snapshotRepository>
+<!--   <snapshotRepository>
     <id>snapshots</id>
     <!-- CHANGE HERE by your team nexus server -->
     <url>http://10.100.90.206:8081/repository/maven-snapshots/</url>
-  </snapshotRepository>
+  </snapshotRepository> -->
   </distributionManagement>
 
   <build>
