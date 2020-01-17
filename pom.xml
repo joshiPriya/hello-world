@@ -279,23 +279,12 @@
     <module>webapp</module>
   </modules>
 
-  <distributionManagement>
-    <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/maven-project-site</url>
-    </site>
-	
-	<!-- Added repository distribution -->
-	 <repository>
+ <distributionManagement>
+   <repository>
     <id>releases</id>
-    <url>http://10.100.90.206:8081/repository/maven-releases/</url>
-  </repository>
-  <snapshotRepository>
-    <id>snapshots</id>
-    <!-- CHANGE HERE by your team nexus server -->
-    <url>http://10.100.90.206:8081/repository/maven-snapshots/</url>
-  </snapshotRepository>
+    <name>maven-release</name>
+    <url>http://10.100.90.206:8081/nexus/content/repositories/releases</url>
+  </repository>     
   </distributionManagement>
 
   <build>
@@ -326,9 +315,6 @@
    </plugins>
   </build>
 
-    
-
-  <dependencyManagement>
     <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -338,8 +324,7 @@
     </dependency>
   </dependencies>
 </project>
-  </dependencyManagement>
 
 
-</project>
+
 
