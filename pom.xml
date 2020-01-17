@@ -31,7 +31,7 @@
            <!-- Added repository distribution -->
     <snapshotRepository>
     <id>snapshots</id>
-    <url>http://10.100.90.206:8081/repository/maven-snapshots/</url>
+    <url>http://10.100.90.206:8081/repository/maven-snapshots</url>
   </snapshotRepository>
   </distributionManagement>
 
