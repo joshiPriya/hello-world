@@ -3,11 +3,11 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.example.maven-project</groupId>
+  <groupId>com.org.etisalatpoc</groupId>
   <artifactId>maven-project</artifactId>
-  <packaging>pom</packaging>
+  <packaging>srcumpoc</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>Maven Project</name>
+  <name>Devops-Poc</name>
   <description>Sample Maven project with a working, deployable site.</description>
   <url>http://www.example.com</url>
 
@@ -28,12 +28,12 @@
       <url>file:///tmp/maven-project-site</url>
     </site> 
      <repository>
-            <id>deployment</id>
+            <id>deployment-release</id>
             <name>Internal Releases</name>
-            <url>http://10.100.90.206:8081/repository/maven-releases/</url>
+            <url>http://10.100.90.206:8081/repository/maven-release/</url>
         </repository>
         <snapshotRepository>
-            <id>deployment</id>
+            <id>deployment-snapshot</id>
             <name>Internal Snapshot Releases</name>
             <url>http://10.100.90.206:8081/repository/maven-snapshot/</url>
         </snapshotRepository>	  
