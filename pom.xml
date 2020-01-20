@@ -28,12 +28,12 @@
       <url>file:///tmp/maven-project-site</url>
     </site> 
      <repository>
-            <id>deployment-release</id>
+            <id>deployment</id>
             <name>Internal Releases</name>
             <url>http://10.100.90.206:8081/repository/maven-release/</url>
         </repository>
         <snapshotRepository>
-            <id>deployment-snapshot</id>
+            <id>deployment</id>
             <name>Internal Snapshot Releases</name>
             <url>http://10.100.90.206:8081/repository/maven-snapshot/</url>
         </snapshotRepository>	  
