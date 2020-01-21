@@ -3,11 +3,11 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.org.etisalatpoc</groupId>
-  <artifactId>srcumpoc</artifactId>
+  <groupId>com.example.maven-project</groupId>
+  <artifactId>maven-project</artifactId>
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>Devops-Poc</name>
+  <name>Maven Project</name>
   <description>Sample Maven project with a working, deployable site.</description>
   <url>http://www.example.com</url>
 
@@ -26,25 +26,11 @@
       <id>site-server</id>
       <name>Test Project Site</name>
       <url>file:///tmp/maven-project-site</url>
-    </site> 
-     <repository>
-            <id>deployment</id>
-            <name>Internal Releases</name>
-            <url>http://10.100.90.206:8081/repository/maven-release/</url>
-        </repository>
-        <snapshotRepository>
-            <id>deployment</id>
-            <name>Internal Snapshot Releases</name>
-            <url>http://10.100.90.206:8081/repository/maven-snapshot/</url>
-        </snapshotRepository>	  
-	  
-
-        
+    </site>
   </distributionManagement>
 
   <build>
     <plugins>
-             
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
@@ -56,29 +42,9 @@
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
         <configuration>
-	<version>2.5.2</version>
           <autoVersionSubmodules>true</autoVersionSubmodules>
         </configuration>
       </plugin>
-	    
-	    <plugin> 
-
-                <!-- Building an executable jar -->
-
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.1.0</version>
-                <configuration>
-                  <archive>
-                    <manifest>
-
-                    <!-- give full qualified name of your main class-->
-                      <mainClass>com.org.etisalatpoc</mainClass>
-
-                    </manifest>
-                  </archive>
-                </configuration>
-    </plugin>
 
       <plugin>
         <artifactId>maven-site-plugin</artifactId>
@@ -252,78 +218,3 @@
   </prerequisites>
 
 </project>
- 
-
-
-<!--<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
-  <modelVersion>4.0.0</modelVersion>
-
-  <groupId>com.example.maven-project</groupId>
-  <artifactId>maven-project</artifactId>
-  <version>1.0.0</version>
-  <packaging>jar</packaging>
-  <name>Maven Project</name>
-  <description>Sample Maven project with a working, deployable site.</description>
-  <url>http://www.example.com</url>
-
-  <properties>
-    <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
-  </properties>
-
-  <modules>
-    <module>server</module>
-    <module>webapp</module>
-  </modules>
-
- <distributionManagement>
-   <repository>
-    <id>releases</id>
-    <name>maven-release</name>
-    <url>http://10.100.90.206:8081/nexus/content/repositories/releases</url>
-  </repository>     
-  </distributionManagement>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>build-helper-maven-plugin</artifactId>
-        <version>1.10</version>
-        <executions>
-          <execution>
-            <id>attach-artifacts</id>
-            <phase>package</phase>
-            <goals>
-              <goal>attach-artifact</goal>
-            </goals>
-            <configuration>
-              <artifacts>
-                <artifact>
-                    <file>${project.basedir}/metadata.n3</file>
-                  <type>n3</type>
-                  <classifier>metadata</classifier>·
-                </artifact>
-              </artifacts>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-   </plugins>
-  </build>
-
-    <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-</project>
--->
-
-
-
