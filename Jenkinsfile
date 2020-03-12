@@ -14,7 +14,7 @@ stage('delet ws')
 stage('compile-package')
 {
     def mvnhome = tool name: 'maven3', type: 'maven'
-    sh "mvn clean package"
+    sh "${mvnhome}/bin/mvn clean package"
 
 }
  /*
